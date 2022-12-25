@@ -58,3 +58,9 @@ ul, li, a{
 .news {
     background-color: #a16203;
 }
+.colour {
+    height: 5px;
+    width: 100%;
+    background-color: #a16203;
+    margin-top: -6px;
+}
