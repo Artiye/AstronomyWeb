@@ -48,3 +48,27 @@ margin-bottom: 20px;
     padding-left: 15px;
     
 }
+#register-button{
+
+    display :inline-block ;
+    align-self: center;
+}
+
+
+
+.button{
+    border:1px solid solid;
+    color:white;
+    background-color:transparent;
+    border-radius: 6px;
+    border-color:rgb(176, 183, 183);
+    align-content: left;
+    width:90px;
+    height:20px;
+    transition: width 0.4s; 
+}
+.button:hover{
+    background-color: rgba(13, 14, 14, 0.444);
+    width:92px ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
