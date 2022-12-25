@@ -65,3 +65,35 @@ background-color:#373636;
     background-color: #a17fe6;
     margin-top: -6px;
 }
+.main-h1 {
+    color: #a17fe6;
+    margin: 0 auto;
+    margin-top: 75px;
+    text-align: center;
+    font-size: 70px;
+}
+
+
+.fotoja1 img {
+   width: 500px;
+}
+.fotoja1{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.fotoja1 h1{
+    font-size: 30px;
+    color: white;
+    margin-left: 4%;
+    letter-spacing: 2px;
+}
+
+.fotoja1 h1 span{
+    font-size: 40px;
+    color: #a17fe6;
+}
