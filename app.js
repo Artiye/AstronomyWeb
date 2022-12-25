@@ -14,3 +14,19 @@ if(vlera){
 }
 })
 
+var password = document.getElementById("password");
+var passwordError = document.getElementById("password-error");
+
+password.addEventListener('input', function (e){
+
+var userpattern1 = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+var currentValue1 = e.target.value;
+var vlera1 = userpattern1.test(currentValue1);
+
+
+if(vlera1){
+    passwordError.style.display = 'none';
+}else{
+    passwordError.style.display  = 'block';
+}
+})
