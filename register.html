@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>Register</title>
 </head>
 <body>
+    <div class="header" style="height:100%;">
+        <h1 style="font-size:300%;">Welcome to our website!</h1>
+        <h4>Lets start by creating your account</h4>
+    </div>
     
+    <div class="user_input_box" >
+            
+        <div class="box-content">
+             <h4>Sign up</h4>
+                <form>
+            <div class="form-row ">
+                <input type="name" id="name" class="input-field" placeholder="Name" required>
+            </div>
+                 
+            <div class="form-row ">
+                <input type="name" id="lastname" class="input-field" placeholder="Last name" required>
+             </div>
+
+            <div class="form-row ">
+                <input type="email" placeholder="Username" class="input-field" id="username" required >
+            </div>
+
+            <div class="form-row ">
+                <input type="password" placeholder="Password" class="input-field" id="password" required>
+            </div>
+
+                <div class="form-row ">
+                    <input type="password" placeholder="Password" class="input-field" id="password1" required>
+                </div>
+                
+                <div>
+                <button type="submit"  class="button" value="Create acc">Create acc</button>
+                </div>
+                </form>
+              
+                 <p>Back to login</p>
+              <div class="login_button">
+                 <button  class="button" onclick><a href="index.html">Login</a></button>
+              </div>
+          </div>
+    </div>
 </body>
 </html>
