@@ -97,6 +97,11 @@ background-color:#373636;
     font-size: 40px;
     color: #a17fe6;
 }
+.fotoja2 img {
+    width: 500px;
+}
+
+
 .fotoja2{
     display: flex;
     width: 80%;
@@ -116,6 +121,9 @@ background-color:#373636;
 .fotoja2 h1 span{
     font-size: 40px;
     color: #a17fe6;
+}
+.fotoja3 img {
+    width: 500px;
 }
 
 .fotoja3{
