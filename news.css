@@ -147,3 +147,22 @@ main h1 {
 .rightside a:hover h1{
     color: rgb(63, 63, 250);
 }
+.bottom-news{
+    display: flex;
+    margin-top: 5%;
+    padding: 0 5%;
+}
+
+.bottom-news a{
+    margin: 0 1%;
+}
+
+.news-box h3{
+    padding: 0 20px;
+    transition: .4s;
+    border-left: 2px solid #212121;
+}
+
+.news-box:hover h3{
+    border-left: 2px solid #a16203;
+}
