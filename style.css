@@ -26,3 +26,25 @@ body {
    margin: 0 auto;
    position:relative ;
 }
+
+.form-row{
+    margin-top: 20px;
+margin-bottom: 20px;
+}
+.form-content{
+    display:block;
+   align-self:center;
+   margin:auto; 
+
+}
+.input-field {
+    background-color: transparent;
+    color:white;
+    border: 2px solid rgb(101, 101, 101);
+    border-radius:30px;
+    width:200px;
+    height:25px;
+    text-align:left;
+    padding-left: 15px;
+    
+}
