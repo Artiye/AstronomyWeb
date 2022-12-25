@@ -97,3 +97,44 @@ background-color:#373636;
     font-size: 40px;
     color: #a17fe6;
 }
+.fotoja2{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    align-items: center;
+    margin-bottom: 5%;
+
+}
+
+.fotoja2 h1{
+    font-size: 30px;
+    color: white;
+    margin-right: 4%;
+}
+
+.fotoja2 h1 span{
+    font-size: 40px;
+    color: #a17fe6;
+}
+
+.fotoja3{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.fotoja3 h1{
+    font-size: 30px;
+    color: white;
+    margin-left: 4%;
+    letter-spacing: 2px;
+}
+
+.fotoja3 h1 span{
+    font-size: 40px;
+    color: #a17fe6;
+}
