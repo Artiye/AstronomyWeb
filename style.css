@@ -1,0 +1,50 @@
+body {
+    background-image: url('space-darker.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    color: rgb(255, 255, 255);
+   text-align: center;
+   font-family: Arial;
+}
+.user_input_box {
+
+    background-color:rgba(81, 81, 81, 0.193); 
+   border-style: hidden;
+    padding: 10px;
+    margin: 0 auto;
+    width: 350px;
+    height:410px;
+    border-radius: 3%;
+    text-align: center;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-content{
+    display:block;
+   margin: 0 auto;
+   position:relative ;
+}
+
+.form-row{
+    margin-top: 20px;
+margin-bottom: 20px;
+}
+.form-content{
+    display:block;
+   align-self:center;
+   margin:auto; 
+
+}
+.input-field {
+    background-color: transparent;
+    color:white;
+    border: 2px solid rgb(101, 101, 101);
+    border-radius:30px;
+    width:200px;
+    height:25px;
+    text-align:left;
+    padding-left: 15px;
+    
+}

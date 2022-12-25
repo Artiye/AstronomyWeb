@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>login</title>
 </head>
 <body>
@@ -11,6 +12,27 @@
         <h1 style="font-size:300%;">Welcome to our website!</h1>
         <h4>Lets start by logging you into our site</h4>
     </div>
-    
+    <div class="user_input_box" >
+        <div class="box-content">
+              <h4>Log in</h4>
+
+             <form>
+             <div class="form-row">
+             <input type="email" placeholder="Username" class="input-field" id="username" required>
+             </div>
+             <div class="form-row">
+             <input type="password" placeholder="Password" class="input-field"  id="password" required>
+             </div>
+             <button  class="button" id="log-button" onclick><a href="home.html">Log in</a></button>
+             </form>
+              <p>Don't have an account? Sign up now:</p>
+         
+           <div class="register_button" >
+              <button  class="button" id="register-button" onclick><a href="register.html">Sign up</a></button>
+           </div>
+          
+   </div>
+ </div>
+  
 </body>
 </html>
