@@ -1,29 +1,39 @@
 body {
+    height:100vh;
+    width:100vw;
+    overflow-x:hidden;
     background-image: url('images/space-darker.png');
     background-repeat:no-repeat;
     background-size:cover;
     color: rgb(255, 255, 255);
    text-align: center;
-   font-family: Arial;
+   font-family: 'Manrope', sans-serif;
+   /*
+   display:flex;
+   flex-direction:column';
+   justify-content:center;
+   alignt-items:center;
+   */
+  
 }
 .user_input_box {
-
+    font-family: 'Manrope', sans-serif;
     background-color:rgba(81, 81, 81, 0.193); 
-   border-style: hidden;
-    padding: 10px;
+    padding: 30px;
     margin: 0 auto;
-    width: 350px;
-    height:410px;
-    border-radius: 3%;
-    text-align: center;
-    font-size: medium;
+    width: 40%;
+    position:absolute;
+    left:30%;
+    right:30%;
+    height:60%;
+    top:20%;
+    bottom:20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .box-content{
     display:block;
-   margin: 0 auto;
    position:relative ;
 }
 
@@ -31,54 +41,45 @@ body {
     margin-top: 20px;
 margin-bottom: 20px;
 }
-.form-content{
-    display:block;
-   align-self:center;
-   margin:auto; 
 
-}
 .input-field {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.253);
     color:white;
-    border: 2px solid rgb(101, 101, 101);
-    border-radius:30px;
+    border-style:hidden;
     width:200px;
     height:25px;
     text-align:left;
     padding-left: 15px;
     
 }
-#register-button{
 
-    display :inline-block ;
-    align-self: center;
-}
 
 .button{
-    border:1px solid solid;
+    font-family: 'Manrope', sans-serif;
+    border-style: hidden;
     color:white;
-    background-color:transparent;
-    border-radius: 6px;
+    background-color:rgb(0, 0, 0);
     border-color:rgb(176, 183, 183);
     align-content: left;
-    width:90px;
-    height:20px;
+    width:160px;
+    height:30px;
     transition: width 0.4s; 
 }
 .button:hover{
-    background-color: rgba(13, 14, 14, 0.444);
-    width:92px ;
+    background-color: rgb(48, 48, 48);
+    width:110px ;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
  }
 
  ::placeholder{
-
+    font-family: 'Manrope', sans-serif;
     color:rgba(255, 255, 255, 0.949);
     text-align: left;
     padding-left: 5px;
     }
     
-    a{
+    button>a{
+        font-family: 'Manrope', sans-serif;
         text-decoration: none;
         color:white;
     }
