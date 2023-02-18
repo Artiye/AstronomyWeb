@@ -16,6 +16,12 @@ body {
     overflow-x:hidden;
     z-index: 1;
 }
+.new-bg-shadow{
+    height:fit-content;
+    width:inherit;
+    background-color: rgba(38, 36, 36, 0.318);
+    position: absolute;
+}
 
 
 
@@ -162,4 +168,28 @@ body {
         color:rgb(130, 121, 182);
         transition: .4s;
      }
+     
+     @media screen and (max-width:1024px){
+
+        .top-section{
+            margin-top: 8px;
+            margin-bottom:8px;
+            width:100%
+        }
+    
+        .news1{
+            width:70%;
+            position:relative;
+            left:15%;
+           display:grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: 1fr;
+           gap:30px;
+        }
+    
+        .img1{
+            grid-row: span 1;
+            grid-column: span 1;
+         }
+    }
     
