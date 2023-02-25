@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="contact.css">
         <script src="nav.js" defer></script>
+        <script src="contact.js" defer></script>
     <title>&#128301;Contact</title>
 </head>
 <body>
@@ -41,21 +42,24 @@
         <form class="form" action="">
             
             <div class="form-group">
-                <input type="name" placeholder="Name" class="input-field" required>
+                <input type="name" placeholder="Name" class="input-field" id="contact-name" onkeyup="validateName()" required>
                 <span id="name-error"></span>
             </div>
 
             <div class="form-group">
-                <input type="email" placeholder="Email" class="input-field" required>
+                <input type="email" placeholder="Email" class="input-field" id="contact-email" onkeyup="validateEmail()" required>
                 <span id="email-error"></span>
             </div>
             
             <div class="form-group">
-                <textarea  id="message"  placeholder="Message" class="input-field" required></textarea>
+                <textarea  placeholder="Message" class="input-field" id="contact-message" onkeyup="validateMessage()" required></textarea>
                 <span id="message-error"></span>
             </div>
 
-                <button type="submit" value="submit" class="button">Submit</button>
+            <div class="form-group">
+                <button   type="submit"  class="button" onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+            </div>
           
         </form>
         </div>
