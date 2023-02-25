@@ -1,0 +1,18 @@
+*{
+    font-family: 'Manrope', sans-serif;
+    outline: none;
+}
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:100vw;
+    overflow-x: hidden;
+    background: url('images/contact-bg.png');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
