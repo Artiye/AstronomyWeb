@@ -187,7 +187,7 @@ body {
                grid-template-rows: repeat(3, 200px);
                row-gap:15px;
             }
-            .news1>{
+            .news1>*{
                grid-area: span 1;
             }
             
