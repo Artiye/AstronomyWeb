@@ -115,7 +115,7 @@ main{
 @media  screen and (max-width:700px) {
     body{
         overflow-y: scroll;
-       
+
     }
     .contact{
         height:fit-content;
