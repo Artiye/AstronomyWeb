@@ -48,15 +48,24 @@ main{
 .form-group{
     width: 80%;
     position: relative;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.form-group span{
-    position: absolute;
-    bottom:14px;
-    right:10px;
-    color:rgb(180, 97, 97);
-    font-size: 14px;
+.form-group span {
+    align-self: flex-end;
+    color:rgb(228, 106, 106);
+    font-size: 12px;
+    padding-top:2px;
+}
+
+
+.form-group span i {
+    color:white;
 }
 .form{
     display:flex;
@@ -65,7 +74,7 @@ main{
     justify-content: center;
 }
 
-.form>*{
+#submit-error {
     align-self: center;
 }
 
@@ -80,8 +89,15 @@ main{
     border-style: hidden;
     border-bottom: 0;
     color:white;
+    border-bottom: 1px solid black;
 }
 
+textarea {
+    width: 250px;
+    height: 100px;
+    resize:none;
+  }
+  
 .button{
     width:80%;
     height:40px;
