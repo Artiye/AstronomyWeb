@@ -27,7 +27,7 @@ body {
 
 .top-section-description{
     width:50%;
-    height:20%;
+    height:fit-content;
     position:relative;
     left:2.5%;
     margin-top:5rem;
@@ -41,10 +41,10 @@ body {
 
 
 .top-section{
-        margin-top: 15px;
+        margin-top: 2rem;
         margin-bottom:15px;
         width:100%;
-        height:60%;
+        height:fit-content;
     }
     .news1{
         width:95%;
@@ -111,14 +111,12 @@ body {
      }            
 
 .bottom-news{
-        height:15%;
+        height:fit-content;
         width:95%;
         position: relative;
         left:2.5%;
         display:grid;
-        grid-template-columns: repeat(4,1fr);
-        /* grid-template-rows: 1fr; */
-        /* background-color: #fff; */
+        grid-template-columns: repeat(4,1fr);      
         gap:7px;
         line-height: 20px;
         padding:2px;
@@ -169,27 +167,44 @@ body {
         transition: .4s;
      }
      
-     @media screen and (max-width:1024px){
+     @media screen  and (max-width:500px)  {
 
-        .top-section{
-            margin-top: 8px;
-            margin-bottom:8px;
-            width:100%
+        body{
+            overflow-x: hidden;
+            overflow-y: scroll;
+            margin: 0;
         }
-    
-        .news1{
-            width:70%;
+        .top-section-description{
+            width:90%;
+            height:fit-content;
             position:relative;
-            left:15%;
-           display:grid;
-           grid-template-columns: 1fr;
-           grid-template-rows: 1fr;
-           gap:30px;
-        }
-    
-        .img1{
-            grid-row: span 1;
-            grid-column: span 1;
-         }
+            left:5%;
+            font-size:16px;
+            }
+            .news1{
+               display:grid;
+               grid-template-columns: 1fr;
+               grid-template-rows: repeat(3, 200px);
+               row-gap:15px;
+            }
+            .news1>{
+               grid-area: span 1;
+            }
+            
+             .bottom-news{
+                left:2%;
+                display:grid;
+                grid-template-columns:1fr;
+                grid-template-rows: repeat(4,1fr);
+                gap:2px;
+                padding:3px;
+                padding-left: 0rem;
+            }
+
+            .article{
+                border-bottom: 1px solid white;
+                border-left: hidden;
+                background-color: rgba(36, 28, 49, 0.163);
+            }
+
     }
-    
