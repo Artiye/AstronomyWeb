@@ -136,5 +136,18 @@ nav a{
         margin-bottom: 4px;
         background-color: rgb(51, 50, 50);
         padding:6px;
+        transition: .8s;
     }
+
+    .links li:hover{
+        background-color: #5c5c5f;
+        transition: .6s;
+    }
+
+    .links a:hover{
+    color:rgba(28, 28, 31, 0.842);
+    transition:0.4s;
+    border-bottom: none;
+}
+    
 }
