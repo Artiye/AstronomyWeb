@@ -230,10 +230,36 @@ $astronomy= new astronomy();
           </ul>
         </div>
        </section>
-    
        <div class="slider-description">
         <p>Selected articles about planets in our solar system</p>
      </div>
     <br>
+
+    <?php
+     if(isset($_SESSION['FirstName'])) {
+        $FirstName = $_SESSION['FirstName'];
+        echo "<script>
+        let user = document.getElementById('linkuLogin');
+        user.innerText = '$FirstName';
+        user.href = 'logout.html';
+        </script>";
+    }
+    if(isset($_SESSION['UserType'])) {
+        $UserType = $_SESSION['UserType'];
+        if($UserType === 'admin') {
+            echo "<script>
+            let db = document.getElementById('dbLink');
+            db.style.display = 'block';</script>";
+        } else {
+            echo "<script>
+            let db = document.getElementById('dbLink');
+            db.style.display = 'none';</script>";
+        }
+    } else {
+        echo "<script>
+            let db = document.getElementById('dbLink');
+            db.style.display = 'none';</script>";
+    }
+    ?>
 </body>
 </html>
