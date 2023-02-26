@@ -27,32 +27,32 @@
                     <form method="POST" action="register.php">
                 
             <div class="form-row ">
-                <input type="name" id="firstname" class="input-field" placeholder="First name" required onkeyup="validateFirstName()">
+                <input type="name" id="name" class="input-field" placeholder="First name" name="firstName" required onkeyup="validateFirstName()">
                 <span id="firstname-error"></span>
             </div>
                  
             <div class="form-row ">
-                <input type="name" id="lastname" class="input-field" placeholder="Last name" required onkeyup="validateLastName()">
+                <input type="name" id="lastname" class="input-field" placeholder="Last name" name="lastName" required onkeyup="validateLastName()">
                 <span id="lastname-error"></span>
              </div>
 
             <div class="form-row ">
-                <input type="email" placeholder="email" class="input-field" id="email" required onkeyup="validateEmail()">
+                <input type="email" placeholder="email" class="input-field" id="email" name="email" required onkeyup="validateEmail()">
                 <span id="email-error"></span>
             </div>
 
             <div class="form-row ">
-                <input type="password" placeholder="Password" class="input-field" id="password" required onkeyup="validatePassword()">
+                <input type="password" placeholder="Password" class="input-field" id="password" name="password" required onkeyup="validatePassword()">
                 <span id="password-error"></span>
             </div>
 
                 <div class="form-row ">
-                    <input type="password" placeholder="Confirm password" class="input-field" id="pass2" required onkeyup="validateConfirmPass()">
+                    <input type="password" placeholder="Confirm password" class="input-field" id="pass2" name="cpassword" required onkeyup="validateConfirmPass()">
                     <span id="pass2-error"></span>
                 </div>
                 
                 <div class="form-row">
-                <button type="submit"  class="button" value="Create acc" onclick="return validateForm()">Create account</button>
+                <button type="submit"  class="button" value="Create acc" name='Register' onclick="return validateForm()">Create account</button>
                 <span id="submit-error"></span>
                 </div>
                 </form>
