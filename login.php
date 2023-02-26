@@ -39,7 +39,7 @@
               <p style="font-size: smaller;">Don't have an account?</p>
          
            <div class="register_button" >
-              <button  class="button" id="register-button" ><a href="register.html">Sign up</a></button>
+              <button  class="button" id="register-button" ><a href="register.php">Sign up</a></button>
            </div>
           
    </div>

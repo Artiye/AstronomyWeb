@@ -29,11 +29,11 @@ $astronomy= new astronomy();
         </a>
         <div class="links">
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="home1.php">Home</a></li>
+            <li><a href="test-news.php">News</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="login.php">Login</a></li>
         </ul>
         </div>
      </nav>
