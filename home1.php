@@ -20,8 +20,8 @@ $astronomy= new astronomy();
 
 </head>
 <body>
-    <nav>
-        <a href="about.html"><h1 class="logo">SPACED</h1></a>
+<nav>
+        <a href="about.php"><h1 class="logo">SPACED</h1></a>
         <a href="#" class="nav-button">
            <span class="bar"></span>
            <span class="bar"></span>
@@ -33,11 +33,12 @@ $astronomy= new astronomy();
             <li><a href="test-news.php">News</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="login.php">Login</a></li>
+            <li><a href="dashboard.php" id='dbLink'>Dashboard</a></li>
+            <li><a href="login.php" id='linkuLogin'>Login</a></li>
         </ul>
         </div>
      </nav>
-
+     
 
 
      <?php 
