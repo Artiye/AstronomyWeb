@@ -10,7 +10,7 @@ function validateUser(){
         return false;
     }
 
-    if(!user.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)){
+    if(!user.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)){
       userError.innerHTML = 'email is invalid'
       return false;
     }
