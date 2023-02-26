@@ -7,7 +7,7 @@ var submitError = document.getElementById('submit-error')
 
 
 function validateFirstName(){
-    var firstname = document.getElementById('firstname').value;
+    var firstname = document.getElementById('name').value;
 
     if(firstname.length == 0){
         firstNameError.innerHTML = 'name required'

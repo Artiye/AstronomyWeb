@@ -33,12 +33,14 @@ if($_SESSION['UserType'] !== "admin"){
     
     <div class="dashboard">
 
-     <h1>SPACED | Dashboard</h1>
+    <h1>SPACED <span style="border-left:2px solid white;padding-left:6px;">Dashboard</span></h1>
 
 
      <div class="buttons">
-        <button class="button "><a href="shtoUser.php">Add New User</a></button>
         <button class="button "><a href="home1.php">Home</a></button>
+        <button class="button "><a href="shtoUser.php">Add New User</a></button>
+        <button class="button "><a href="contactdashboard.php">Contact Dashboard</a></button>
+
      </div>
      <table>
     
@@ -73,15 +75,7 @@ if (!empty($info)) {
 echo "No users";
 }
   ?>
-        
-
      </table>
-
     </div>
-
-
-
-
-
 </body>
 </html>

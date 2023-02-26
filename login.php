@@ -24,15 +24,15 @@
 ?>
              <form method="POST" action="login.php">
              <div class="form-row">
-             <input type="email" placeholder="Username" class="input-field" id="username"  autocomplete="off" required onkeyup="validateUser()">
+             <input type="email" placeholder="Email" class="input-field" id="username" name="Email"  autocomplete="off" required onkeyup="validateUser()">
              <span id="user-error"></span>
              </div>
              <div class="form-row">
-             <input type="password" placeholder="Password" class="input-field"  id="password" required onkeyup="validatePassword()">
+             <input type="password" placeholder="Password" class="input-field"  id="password" name="Password" required onkeyup="validatePassword()">
              <span id="pass-error"></span>
              </div>
              <div class="form-row">
-                 <button  class="button" id="log-button"onclick="return validateForm()"><a href="home.html">Log in</a></button>
+                 <button  class="button" id="log-button" name="Login" onclick="return validateForm()">Log in</a></button>
                  <span id="submit-error2"></span>
              </div>
              </form>
