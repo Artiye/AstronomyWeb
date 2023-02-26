@@ -57,7 +57,7 @@ function validateEmail(){
         return false;
     }
 
-    if(!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)){
+    if(!email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)){
       emailError.innerHTML = 'email is invalid'
       return false;
     }
