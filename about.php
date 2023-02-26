@@ -1,4 +1,51 @@
+<?php 
+include './model/astronomy.php';
+$astronomy= new astronomy();
+?>
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="about.css">
+        <script src="nav.js" defer></script>
+    <title>about</title>
+</head>
+<body>
+    <nav>
+        <a href="about.php"><h1 class="logo">SPACED</h1></a>
+        <a href="#" class="nav-button">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+        </a>
+        <div class="links">
+        <ul>
+            <li><a href="home1.php">Home</a></li>
+            <li><a href="test-news.php">News</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="login.php">Login</a></li>
+        </ul>
+        </div>
+     </nav>
+      <section>
+        <main>
+            <?php 
+            $info= $astronomy->getAboutUs();
+            $about = mysqli_fetch_array($info);
+            ?>
+               <h1 class="animate heading"><?php echo $about['Title'] ?></h1>
+               <p class="animate paragraph1"><?php echo $about['Description'] ?></p>
+     </main>
+      </section>
+</body>
+</html><!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,4 +86,4 @@
      </main>
       </section>
 </body>
-</html>
+</html> -->
