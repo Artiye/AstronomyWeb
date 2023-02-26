@@ -2,12 +2,11 @@ var firstNameError = document.getElementById('firstname-error')
 var lastNameError = document.getElementById('lastname-error')
 var emailError = document.getElementById('email-error')
 var passwordError = document.getElementById('password-error')
-var password2Error = document.getElementById('pass2-error')
-var submitError = document.getElementById('submit-error')
-
+var userTypeError = document.getElementById('usertype-error')
+var addUserError = document.getElementById('submit-error')
 
 function validateFirstName(){
-    var firstname = document.getElementById('firstname').value;
+    var firstname = document.getElementById('name').value;
 
     if(firstname.length == 0){
         firstNameError.innerHTML = 'name required'
@@ -107,41 +106,50 @@ function validateEmail(){
     return true;
   }
 
+// function validateUserType(){
+// var userType = document.getElementById('userType').value
 
 
-  function validateConfirmPass(){
-  var password2 = document.getElementById('pass2').value
-  var password1 = document.getElementById('password').value
+// if(userType.length == 0 ){
+//     userTypeError.innerHTML = 'user type is required'
+//     return false;
+// }
 
-  if(password2.length == 0){
-    password2Error.innerHTML = 'password must be confirmed'
-    return false;
-  }
+// if(userType.value === 'user' || userType.value === 'admin'){
+//     userTypeError.innerHTML = '<i class="check-symbol">&#10004;</i>'
+// return true;
+   
+// }else{
+//     userTypeError.innerHTML = 'user type is invalid'
+//     return false;
+// }
 
-  if(!password2.match(password1)){
-    password2Error.innerHTML = 'paswords do not match'
-    return false;
-  }
-  
-  password2Error.innerHTML = '<i class="check-symbol">&#10004;</i>'
-  return true;
 
-  }
 
-  function validateForm (){
+    const userType = document.getElementById('userType');
+    function validateUserType(){
+        if(userType.value != 'admin' && userType.value != 'user'){
+        userTypeError.innerHTML = 'Please only select user or admin!';
+        } else {
+            userTypeError.innerHTML = '<i class="check-symbol">&#10004;</i>'
+             return true;
+        }
+    } 
 
-    if(!validateFirstName() ||!validateLastName() || !validateEmail() || !validatePassword()  || !validateConfirmPass()) {
-        submitError.display = 'block'
-      submitError.innerHTML = 'please fix errors before submiting'
-      setTimeout(function(){submitError.display = 'none'}, 3000);
+
+
+  function validateAddUser (){
+
+    if(!validateFirstName() ||!validateLastName() || !validateEmail() || !validatePassword()  || !validateUserType()) {
+        addUserError.display = 'block'
+      addUserError.innerHTML = 'please fix errors before submiting'
+      setTimeout(function(){addUserError.display = 'none'}, 3000);
       return false; 
     }
-    // if(validateFirstName() && validateEmail() && validateLastName()) {
-       
-    //   submitError.innerHTML = ''
       return true; 
-   // }
+   
 }
+
 
 
 
