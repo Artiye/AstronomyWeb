@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <script src="signup.js" defer></script>
     <title>Register</title>
 </head>
 <body>
@@ -21,27 +21,33 @@
              <h4>Sign up</h4>
                 <form>
             <div class="form-row ">
-                <input type="name" id="name" class="input-field" placeholder="Name" required>
+                <input type="name" id="firstname" class="input-field" placeholder="First name" required onkeyup="validateFirstName()">
+                <span id="firstname-error"></span>
             </div>
                  
             <div class="form-row ">
-                <input type="name" id="lastname" class="input-field" placeholder="Last name" required>
+                <input type="name" id="lastname" class="input-field" placeholder="Last name" required onkeyup="validateLastName()">
+                <span id="lastname-error"></span>
              </div>
 
             <div class="form-row ">
-                <input type="email" placeholder="email" class="input-field" id="email" required >
+                <input type="email" placeholder="email" class="input-field" id="email" required onkeyup="validateEmail()">
+                <span id="email-error"></span>
             </div>
 
             <div class="form-row ">
-                <input type="password" placeholder="Password" class="input-field" id="password" required>
+                <input type="password" placeholder="Password" class="input-field" id="password" required onkeyup="validatePassword()">
+                <span id="password-error"></span>
             </div>
 
                 <div class="form-row ">
-                    <input type="password" placeholder="Password" class="input-field" id="password1" required>
+                    <input type="password" placeholder="Password" class="input-field" id="password1" required onkeyup="validateConfirmPass()">
+                    <span id="pass2-error"></span>
                 </div>
                 
-                <div>
-                <button type="submit"  class="button" value="Create acc">Create account</button>
+                <div class="form-row">
+                <button type="submit"  class="button" value="Create acc" onclick="return validateForm()">Create account</button>
+                <span id="submit-error"></span>
                 </div>
                 </form>
               

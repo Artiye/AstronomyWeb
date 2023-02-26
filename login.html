@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <script src="sign-in.js" defer></script>
     <title>login</title>
 </head>
 <body>
@@ -19,17 +19,22 @@
 
              <form>
              <div class="form-row">
-             <input type="email" placeholder="Username" class="input-field" id="username" required>
+             <input type="email" placeholder="Username" class="input-field" id="username"  autocomplete="off" required onkeyup="validateUser()">
+             <span id="user-error"></span>
              </div>
              <div class="form-row">
-             <input type="password" placeholder="Password" class="input-field"  id="password" required>
+             <input type="password" placeholder="Password" class="input-field"  id="password" required onkeyup="validatePassword()">
+             <span id="pass-error"></span>
              </div>
-             <button  class="button" id="log-button" onclick><a href="home.html">Log in</a></button>
+             <div class="form-row">
+                 <button  class="button" id="log-button"onclick="return validateForm()"><a href="home.html">Log in</a></button>
+                 <span id="submit-error2"></span>
+             </div>
              </form>
               <p style="font-size: smaller;">Don't have an account?</p>
          
            <div class="register_button" >
-              <button  class="button" id="register-button" onclick><a href="register.html">Sign up</a></button>
+              <button  class="button" id="register-button" ><a href="register.html">Sign up</a></button>
            </div>
           
    </div>
