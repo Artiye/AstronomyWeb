@@ -30,7 +30,7 @@ function validatePassword(){
  }
 
  if(password.length < minLength){
-    passwordError.innerHTML = 'passowrd should be at least 8 characters'
+    passwordError.innerHTML = 'password should be at least 8 characters'
     return false; 
  }
  passwordError.innerHTML = '<i class="check-symbol">&#10004;</i>'
