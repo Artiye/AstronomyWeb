@@ -7,7 +7,7 @@ function validateName(){
    var name = document.getElementById('contact-name').value;
 
    if(name.length == 0){
-    nameError.innerHTML = 'name is reuqired'
+    nameError.innerHTML = 'name is required'
     return false;
    }
  
@@ -29,9 +29,7 @@ function validateEmail(){
         return false;
     }
 
-    
-
-    if(!email.match(/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/)){
+    if(!email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)){
       emailError.innerHTML = 'email is invalid'
       return false;
     }
