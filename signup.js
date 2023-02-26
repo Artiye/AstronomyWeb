@@ -22,8 +22,6 @@ function validateFirstName(){
         firstNameError.innerHTML = 'invalid name given.'
         return false;
     }
-
-    ///^[a-zA-Z]+( [a-zA-Z]+)+$/
     
     firstNameError.innerHTML = '<i class="check-symbol">&#10004;</i>'
     return true;

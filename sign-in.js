@@ -18,7 +18,7 @@ function validateUser(){
     userError.innerHTML = '<i class="check-symbol">&#10004;</i>'
     return true;
 }
-
+//
 
 function validatePassword(){
  var password = document.getElementById('password').value
