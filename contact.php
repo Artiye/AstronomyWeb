@@ -27,7 +27,8 @@
             <li><a href="test-news.php">News</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="login.php">Login</a></li>
+            <li><a href="dashboard.php" id='dbLink'>Dashboard</a></li>
+            <li><a href="login.php" id='linkuLogin'>Login</a></li>
         </ul>
         </div>
      </nav>
@@ -62,6 +63,33 @@
           </div>
         </div>
     </div>
+
+    <?php
+     if(isset($_SESSION['FirstName'])) {
+        $FirstName = $_SESSION['FirstName'];
+        echo "<script>
+        let user = document.getElementById('linkuLogin');
+        user.innerText = '$FirstName';
+        user.href = 'logout.html';
+        </script>";
+    }
+    if(isset($_SESSION['UserType'])) {
+        $UserType = $_SESSION['UserType'];
+        if($UserType === 'admin') {
+            echo "<script>
+            let db = document.getElementById('dbLink');
+            db.style.display = 'block';</script>";
+        } else {
+            echo "<script>
+            let db = document.getElementById('dbLink');
+            db.style.display = 'none';</script>";
+        }
+    } else {
+        echo "<script>
+            let db = document.getElementById('dbLink');
+            db.style.display = 'none';</script>";
+    }
+    ?>
 
 </body>
 </html>
