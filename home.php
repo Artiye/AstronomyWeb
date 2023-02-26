@@ -1,3 +1,8 @@
+<?php
+include './model/astronomy.php';
+$astronomy= new astronomy();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +38,22 @@
         </div>
      </nav>
 
- <div class="intro-section">
+
+
+     <?php 
+     $data = $astronomy->getHero();
+     $hero = mysqli_fetch_array($data);
+     ?>
+     <div class="intro-section">
+         <div class="intro-sec-img">
+            <img src="<?php echo $hero['Image'] ?>" alt="">
+         </div>
+         <div class="intro-sec-description">
+            <h2><?php echo $hero['Title'] ?></h2>
+            <p><?php echo $hero['Description'] ?></p>
+         </div>
+     </div>
+ <!-- <div class="intro-section">
          <div class="intro-sec-img">
             <img src="images/first-section-home2.jpg" alt="">
          </div>
@@ -47,7 +67,7 @@
                 voyaging through a singular moment in time on one 
                 very special but relatively minuscule planet among the vastness of space.</p>
          </div>
-     </div>
+     </div> -->
 
 
      <div class="home-content-nav">
@@ -91,9 +111,22 @@
           <button class="slider-button prev" data-slider-button="prev">&#8249;</button>
           <button class="slider-button next" data-slider-button="next">&#8250;</button>
   
-          <ul data-slides>          
+          <ul data-slides>  
+            
+          <?php 
+        $sliderDB = $astronomy->getSliders();
+        foreach ($sliderDB as $index => $slide) { ?>
+        <li class="slide"<?php echo ($index == 0) ? ' data-active' : ''; ?>>
+        <img src="<?php echo $slide['Image']; ?>">
+        <div class="info"<?php echo ($index == 0) ? ' id="info1"' : ''; ?>>
+            <h2><?php echo $slide['Title']; ?></h2>
+            <p><?php echo $slide['Description']; ?></p>
+            <button class="slider-content-button"><a href="<?php echo $slide['URL']; ?>" target="_blank">Read more</a></button>
+        </div>
+        </li>
+<?php } ?>
   
-               <li class="slide" data-active>
+               <!-- <li class="slide" data-active>
                       <img src="images/theSun2.jpg" alt="the sun">
                       <div class="info" id="info1">
                           <h2>The Sun</h2>
@@ -193,7 +226,7 @@
                                and slightly more massive than its near-twin Uranus. </p>
                                <button class="slider-content-button"><a href="https://solarsystem.nasa.gov/planets/neptune/overview/" target="_blank">Read more</a></button>
                       </div>
-              </li>
+              </li> -->
           </ul>
         </div>
        </section>
