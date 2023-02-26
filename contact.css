@@ -19,6 +19,7 @@ body{
 main{
     height:90%;
     width:100%;
+   padding-bottom: 20px;
 }
 
 .contact{
@@ -46,9 +47,9 @@ main{
 }
 
 .form-group{
+    align-self: center;
     width: 80%;
     position: relative;
-    /* border-bottom: 1px solid black; */
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
