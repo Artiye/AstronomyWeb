@@ -17,7 +17,12 @@
         <div class="box-content">
               <h4>Sign in</h4>
 
-             <form>
+              <?php
+    include './model/astronomy.php';
+    $astronomy= new astronomy();
+    $login= $astronomy->login();
+?>
+             <form method="POST" action="login.php">
              <div class="form-row">
              <input type="email" placeholder="Username" class="input-field" id="username"  autocomplete="off" required onkeyup="validateUser()">
              <span id="user-error"></span>
