@@ -5,7 +5,7 @@ body{
     height:100vh;
     color:rgb(241, 242, 242);
     font-weight:300;
-    background-image:url('images/space-darkgrey.png');
+    background-image:url('../images/space-darkgrey.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
