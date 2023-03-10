@@ -15,8 +15,8 @@ $astronomy= new astronomy();
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="nav.css">
-    <script src="slider.js" defer></script>
-    <script src="nav.js" defer></script>
+    <script src="javaScript/slider.js" defer></script>
+    <script src="javaScript/nav.js" defer></script>
 
 </head>
 <body>

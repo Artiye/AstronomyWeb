@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css" />
-    <script src="signup.js" defer></script>
+    <script src="javaScript/signup.js" defer></script>
     <title>&#128301;Register</title>
 </head>
 <body>

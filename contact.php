@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="contact.css">
-        <script src="nav.js" defer></script>
-        <script src="contact.js" defer></script>
+        <script src="javaScript/nav.js" defer></script>
+        <script src="javaScript/contact.js" defer></script>
     <title>Contact</title>
 </head>
 <body>

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <script src="sign-in.js" defer></script>
+    <script src="javaScript/sign-in.js" defer></script>
     <title>&#128301;login</title>
 </head>
 <body>
