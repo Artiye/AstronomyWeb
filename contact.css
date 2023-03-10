@@ -71,8 +71,8 @@ main{
 .form{
     display:flex;
     flex-direction:column;
-    align-content: center;
     justify-content: center;
+    align-items: center;
 }
 
 #submit-error {
@@ -144,6 +144,7 @@ textarea {
         flex-direction: column;
         justify-content: center;
         padding-bottom: 5px;
+        margin-top: 3rem;
     }
 
     .contact-form{

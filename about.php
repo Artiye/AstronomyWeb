@@ -17,7 +17,7 @@ $astronomy= new astronomy();
     <title>about</title>
 </head>
 <body>
-    <<nav>
+    <nav>
         <a href="about.php"><h1 class="logo">SPACED</h1></a>
         <a href="#" class="nav-button">
            <span class="bar"></span>
