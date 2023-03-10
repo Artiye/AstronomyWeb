@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="contact.css">
         <script src="nav.js" defer></script>
+        <script src="contact.js" defer></script>
     <title>Contact</title>
 </head>
 <body>
@@ -46,10 +47,25 @@
         $kontakt = $astronomy->ruajKontakt();
         ?>
         <form class="form" action="" method="POST">
-         <input type="name" placeholder="Name" class="input-field" name='Name'>
-         <input type="email" placeholder="Email" class="input-field" name='Email'>
-         <textarea name="Message" id=" message" cols="20" rows="6" placeholder="Message" class="input-field"></textarea>
-         <button type="submit" value="submit" class="button" name="kontakt">Submit</button>
+            <div class="form-group">
+                <input type="name" placeholder="Name" class="input-field" name='Name' id="contact-name" onkeyup="validateName()" >
+                <span id="name-error"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" placeholder="Email" class="input-field" name='Email' id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <textarea name="Message" cols="20" rows="6" placeholder="Message" class="input-field" id="contact-message" onkeyup="validateMessage()"></textarea>
+                 <span id="message-error"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" value="submit" class="button" name="kontakt" onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+            </div>
         </form>
         </div>
 
@@ -63,7 +79,7 @@
           </div>
         </div>
     </div>
-
+    <br>
     <?php
      if(isset($_SESSION['FirstName'])) {
         $FirstName = $_SESSION['FirstName'];
