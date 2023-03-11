@@ -39,7 +39,7 @@ $astronomy= new astronomy();
 
  <div class="top-section-description">
     <h1>LATEST DISCOVERIES</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fugit laboriosam eligendi suscipit molestiae earum aperiam delectus incidunt, hic autem error officiis eos rerum illo. Delectus quasi dolor modi nobis.</p>
+    <p>Recent discoveries in astronomy include the detection of gravitational waves, confirmation of exoplanets, and advancements in our understanding of dark matter and dark energy. These discoveries are expanding our knowledge of the universe and inspiring further exploration.</p>
  </div>
 
    <section class="top-section">
