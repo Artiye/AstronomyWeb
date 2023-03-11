@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css" />
-    <script src="app.js"></script>
+    <script src="javaScript/shtoUser.js" defer></script>
     <title>Edit</title>
     
 </head>
@@ -55,28 +55,34 @@
           ?>
                     <form method="POST">
                 <div class="form-row ">
-                    <input type="name" id="name" class="input-field" placeholder="Name" name="firstName" value="<?php echo $rez['FirstName'] ?>" required>
+                   <input type="name" id="name" class="input-field" placeholder="Name" name="firstName" value="<?php echo $rez['FirstName'] ?>" required onkeyup="validateFirstName()">
+                   <span id="firstname-error"></span>
                 </div>
                      
                 <div class="form-row ">
-                    <input type="name" id="lastname" class="input-field" placeholder="Last name" name="lastName" value="<?php echo $rez['LastName'] ?>" required>
-                 </div>
-    
-                <div class="form-row ">
-                    <input type="email" placeholder="email" class="input-field" id="email" name="email"  value="<?php echo $rez['Email'] ?>"required >
+                    <input type="name" id="lastname" class="input-field" placeholder="Last name" name="lastName" value="<?php echo $rez['LastName'] ?>" required onkeyup="validateLastName()">
+                    <span id="lastname-error"></span>
                 </div>
     
                 <div class="form-row ">
-                    <input type="text" placeholder="Password" class="input-field" id="password" name="password" value="<?php echo $rez['Password'] ?>" required>
+                    <input type="email" placeholder="email" class="input-field" id="email" name="email"  value="<?php echo $rez['Email'] ?>"required onkeyup="validateEmail()" >
+                    <span id="email-error"></span>
                 </div>
     
-                    <div class="form-row ">
-                        <input type="text" placeholder="User Type" class="input-field" id="usertype" name="userType"  value="<?php echo $rez['UserType'] ?>" required>
-                    </div>
+                <div class="form-row ">
+                    <input type="text" placeholder="Password" class="input-field" id="password" name="password" value="<?php echo $rez['Password'] ?>" required onkeyup="validatePassword()">
+                    <span id="password-error"></span>
+                </div>
+    
+                <div class="form-row ">
+                    <input type="text" placeholder="User Type" class="input-field" id="userType" name="userType"  value="<?php echo $rez['UserType'] ?>" required onkeyup="validateUserType()">
+                    <span id="usertype-error"></span>
+                </div>
                     
-                    <div>
-                    <button type="submit"  class="button" value="Edit acc" name='edit'>Edit account</button>
-                    </div>
+                    <div class="form-row ">
+                    <button type="submit"  class="button" value="Edit acc" name='edit' onclick="return validateAddUser()">Edit account</button>
+                    <span id="submit-error"></span>
+                   </div>
                     </form>
               </div>
         </div>
